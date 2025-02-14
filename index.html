@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emiliano Mauro | Programador Full Stack</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   </head>
   <body>
     <header>
@@ -16,50 +17,52 @@
       <a href="index-en.html" class="lang-btn">🌍 English</a>
     </header>
 
-    <section id="about">
-      <h2>Sobre mí</h2>
-      <img
-        src="perfil_linkedin.jpg"
-        alt="Foto de Emiliano Mauro"
-        class="profile-photo"
-      />
-      <p>
-        Soy un programador Full Stack con experiencia en tecnologías modernas de
-        desarrollo web y backend.
-      </p>
-      <p>
-        Especialista en Java, JavaScript, Python, Node.js, Angular, React, SQL y
-        Oracle.Experiencia en el Frontend con Html, css y React.js
-      </p>
-    </section>
-
-    <section id="projects">
-      <h2>Proyectos Destacados</h2>
-      <div class="project-card">
-        <h3>Gestión de Usuarios</h3>
-        <p>API segura con JWT y control de acceso.</p>
-        <p><strong>Tecnologías:</strong> Java, Spring Boot, MySQL</p>
-      </div>
-      <div class="project-card">
-        <h3>Paginas Web responsivas</h3>
+    <main id="particles-js">
+      <section id="about">
+        <h2>Sobre mí</h2>
+        <img
+          src="perfil_linkedin.jpg"
+          alt="Foto de Emiliano Mauro"
+          class="profile-photo"
+        />
         <p>
-          Proyecto: Buscador de Películas Tecnologías Usadas: HTML: Estructura
-          de la página. CSS: Estilos y diseño responsive. JavaScript: Lógica
-          para consumir la API y mostrar resultados.
+          Soy un programador Full Stack con experiencia en tecnologías modernas
+          de desarrollo web y backend.
         </p>
-        <p><strong>Tecnologías:</strong> Java, Spring Boot, MySQL</p>
-      </div>
-      <div class="project-card">
-        <h3>E-commerce Completo</h3>
-        <p>Plataforma con pagos integrados.</p>
-        <p><strong>Tecnologías:</strong> Node.js, MongoDB, React</p>
-      </div>
-      <div class="project-card">
-        <h3>Panel de Administración</h3>
-        <p>Dashboard para gestión de datos.</p>
-        <p><strong>Tecnologías:</strong> Python, FastAPI, Angular</p>
-      </div>
-    </section>
+        <p>
+          Especialista en Java, JavaScript, Python, Node.js, Angular, React, SQL
+          y Oracle.Experiencia en el Frontend con Html, css y React.js
+        </p>
+      </section>
+
+      <section id="projects">
+        <h2>Proyectos Destacados</h2>
+        <div class="project-card">
+          <h3>Gestión de Usuarios</h3>
+          <p>API segura con JWT y control de acceso.</p>
+          <p><strong>Tecnologías:</strong> Java, Spring Boot, MySQL</p>
+        </div>
+        <div class="project-card">
+          <h3>Paginas Web responsivas</h3>
+          <p>
+            Proyecto: Buscador de Películas Tecnologías Usadas: HTML: Estructura
+            de la página. CSS: Estilos y diseño responsive. JavaScript: Lógica
+            para consumir la API y mostrar resultados.
+          </p>
+          <p><strong>Tecnologías:</strong> Java, Spring Boot, MySQL</p>
+        </div>
+        <div class="project-card">
+          <h3>E-commerce Completo</h3>
+          <p>Plataforma con pagos integrados.</p>
+          <p><strong>Tecnologías:</strong> Node.js, MongoDB, React</p>
+        </div>
+        <div class="project-card">
+          <h3>Panel de Administración</h3>
+          <p>Dashboard para gestión de datos.</p>
+          <p><strong>Tecnologías:</strong> Python, FastAPI, Angular</p>
+        </div>
+      </section>
+    </main>
 
     <footer>
       <p>
@@ -70,5 +73,11 @@
       </p>
       <p>&copy; 2025 Emiliano Mauro | Todos los derechos reservados.</p>
     </footer>
+    <script src="particles.js"></script>
+    <script>
+      particlesJS.load("particles-js", "particles.json", function () {
+        console.log("Particles.js cargado correctamente");
+      });
+    </script>
   </body>
 </html>

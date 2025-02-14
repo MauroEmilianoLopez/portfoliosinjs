@@ -1,0 +1,137 @@
+/* Paleta de colores fríos */
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #50e3c2;
+  --background-color: #e3f2fd;
+  --text-color: #2c3e50;
+  --card-color: white;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: var(--text-color);
+  text-align: center;
+  transition: background 0.5s ease-in-out;
+}
+
+/* Animación de entrada para el nombre */
+.fade-in-out {
+  animation: fadeInOut 3s infinite alternate;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.3;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Encabezado */
+header {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+/* Botón de cambio de idioma */
+.lang-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--secondary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.lang-btn:hover {
+  background: var(--primary-color);
+}
+
+/* Contenedor */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Secciones */
+section {
+  padding: 40px;
+}
+
+/* Tarjetas de proyectos */
+.project-card {
+  background: var(--card-color);
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* Foto de perfil */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-color);
+  margin-top: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-photo:hover {
+  transform: scale(1.1);
+}
+
+/* Pie de página */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* Particulas */
+#particles-js {
+  position: relative;
+}
+#particles-js canvas {
+  position: absolute;
+  aspect-ratio: none;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
